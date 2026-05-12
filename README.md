@@ -78,11 +78,7 @@ Each day folder contains a `pom.xml` but no Maven wrapper. To open a project:
 
 ## Day 7 — Capstone Project *(coming soon)*
 
-> Wiring all the parts into one system
-
-**Concepts:** End-to-end flow, full CRUD, Validation, Exception Handling, Security, Layered Architecture
-
-**Goal:** A Shopping List application with `Category` and `Product` entities, full CRUD for both, global error handling, input validation, and Basic Auth security — combining everything learned across Days 1–6.
+A culmination of everything learned across Days 1–6, bringing it all together into one complete project.
 
 ---
 
