@@ -10,13 +10,13 @@ Each folder contains the source code for that day along with its `pom.xml` so yo
 
 ```
 Spring-Boot-Road-Map/
-├── Introduction to Spring Boot/
-├── Dependency Injection and IoC/
-├── Spring MVC and HTTP/
-├── Spring Data JPA/
-├── Layered Architecture and Errors/
-├── Spring Security/
-└── Capstone Project/          ← coming soon
+├── Day 1 - Introduction to Spring Boot/
+├── Day 2 - Dependency Injection and IoC/
+├── Day 3 - Spring MVC and HTTP/
+├── Day 4 - Spring Data JPA/
+├── Day 5 - Layered Architecture and Errors/
+├── Day 6 - Spring Security/
+└── Day 7 - Capstone Project/          ← coming soon
 ```
 
 ---
