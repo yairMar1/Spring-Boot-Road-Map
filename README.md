@@ -16,7 +16,7 @@ Spring-Boot-Road-Map/
 ├── Day 4 - Spring Data JPA/
 ├── Day 5 - Layered Architecture and Errors/
 ├── Day 6 - Spring Security/
-└── Day 7 - Capstone Project/ (coming soon)
+└── Day 7 - Capstone Project/
 ```
 
 ## How to Run
@@ -76,9 +76,38 @@ Each day folder contains a `pom.xml` but no Maven wrapper. To open a project:
 
 **Built:** A secured Task API where `GET /tasks` is public and all write operations (`POST`, `PUT`, `DELETE`) require HTTP Basic authentication. Security configured via a `SecurityFilterChain` bean.
 
-## Day 7 — Capstone Project *(coming soon)*
+## Day 7 — Capstone Project
 
-A culmination of everything learned across Days 1–6, bringing it all together into one complete project.
+> Everything together — backend meets frontend
+
+**Concepts:** Full-stack integration, CORS configuration, React + Spring Boot, UUID-based entities, `@ManyToOne` relationships, `@ControllerAdvice`, HTTP Basic Auth for write operations, public GET endpoints, `DataLoader` for seeding, product suggestions
+
+**Built:** A Shopping List app with two parts:
+- **Backend:** REST API with `Product` and `Category` entities, full CRUD, search, status tracking, and auto-suggestions. Secured with Spring Security (public reads, auth required for writes).
+- **Frontend:** React app (built in Claude.ai) with Hebrew RTL UI, category filtering, search, inline editing, and full API integration.
+
+### Running Day 7
+
+Day 7 is a full-stack project — the backend and frontend run independently.
+
+**Backend (Spring Boot)**
+- Open `Day 7 - Capstone Project/` as a Maven project in IntelliJ (File → Open → select the folder)
+- Run `ShoppingListApplication` main class
+- API runs at `http://localhost:8080`
+- Credentials for write operations: `admin` / `1234`
+
+**Frontend (React + Vite)**
+
+Requires [Node.js](https://nodejs.org/) installed.
+
+```bash
+cd "Day 7 - Capstone Project/shopping-list-ui"
+npm install
+npm run dev
+```
+
+- UI runs at `http://localhost:5173`
+- Start the backend first — the frontend calls `http://localhost:8080`
 
 ---
 
